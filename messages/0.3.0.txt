@@ -1,4 +1,4 @@
-SublimeLinter-terraform v0.3.0
+SublimeLinter-OpenTofu v0.3.0
 ==============================
 
 ### Changed

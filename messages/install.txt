@@ -1,6 +1,6 @@
-SublimeLinter-contrib-terraform
+SublimeLinter-contrib-OpenTofu
 -------------------------------
-This linter plugin for SublimeLinter provides an interface to Terraform validate.
+This linter plugin for SublimeLinter provides an interface to `tofu validate`.
 
 For more information, please see:
-https://github.com/patrickrgaffney/SublimeLinter-contrib-terraform
+https://github.com/4censord/SublimeLinter-contrib-opentofu

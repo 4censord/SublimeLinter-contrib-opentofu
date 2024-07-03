@@ -3,16 +3,16 @@ import logging
 
 from SublimeLinter.lint import Linter, LintMatch
 
-logger = logging.getLogger('SublimeLinter.plugin.terraform')
+logger = logging.getLogger('SublimeLinter.plugin.tofu')
 
 
-class Terraform(Linter):
+class OpenTofu(Linter):
     # The executable plus all arguments used to lint. The $file_path
     # will be set by super(), and will be the folder path of the file
     # currently in the active view. The "validate" command only operates
     # on directories (modules), so it's provided here to avoid the
     # command attempting to guess what directory we are at.
-    cmd = ('terraform', 'validate', '--json', '${file_path}')
+    cmd = ('tofu', 'validate', '--json', '${file_path}')
 
     # The validate command uses a one-based reporting
     # for line and column numbers.
@@ -20,7 +20,7 @@ class Terraform(Linter):
 
     # A dict of defaults for the linter’s settings.
     defaults = {
-        'selector': 'source.terraform'
+        'selector': 'source.terraform, source.tofu'
     }
 
     # Turn off stdin. The validate command requires a directory.

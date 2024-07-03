@@ -43,3 +43,6 @@ node_modules/*
 # Terraform test files #
 ########################
 *.tf
+# OpenTofu test files #
+########################
+*.tofu
